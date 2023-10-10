@@ -20,6 +20,8 @@
 			position: relative;
 			font-weight: thin;
 			margin-top: 20px;
+			padding: 20px 0;
+    margin: 0 20px;
 			font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 			text-shadow: 1px 1px 1px rgb(161, 161, 161);
 		}
@@ -36,13 +38,15 @@
           	 padding-bottom: 50%;
      		 
 		}
-		.sec3{
-			background-image: url('photo_2023-09-18_14-21-54.jpg');
-			background-repeat:no-repeat;
-			background-size: 100%,50%;
-          	 padding-bottom: 50%;
-     		 
-		}
+		/* Add this CSS to your existing styles */
+.sec3 {
+  background-image: url('photo_2023-09-18_14-21-54.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%, 50%;
+  padding-bottom: 50%;
+}
+
+
 		.sec4{
 			background-image: url('photo_2023-09-18_14-21-54.jpg');
 			background-repeat:no-repeat;
@@ -183,6 +187,8 @@ fieldset{
 			border-radius: 20px;
 			border: none;
 			opacity:  0.7;
+			
+
 		}
 		.f1 fieldset img{
 			min-width: 190px;
@@ -250,9 +256,7 @@ fieldset{
 			padding: 10px;
 
 		}
-		.menu .tag ul{
-			list-style-type: none;
-		}
+		
 		.menu .tag li{
 			float:left;
 			margin-left: 50px;
@@ -262,42 +266,112 @@ fieldset{
 			list-style-type: none;
 		}
 
-		.menu .a li{
-			float:left;
-			margin-left: 10px;
 
-		}
-		
-		.menu .b li{
-			float:left;
-			margin-top: 20px;
-			margin-left: 10px;
+		.menu-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-		}
-		.menu .b{
-			float:left;
-			margin-right: 500px;
-		}
-		.menu .c li{
-			float:left;
-			margin-top: 20px;
-			margin-left: 10px;
-		}
-		.menu .c{
-			float:left;
-			margin-right: 500px;
-		}
-		.menu .e li{
-			float:left;
-			margin-top: 20px;
-			margin-left: 10px;
 
-		}
-		.menu .e{
-			float:left;
-			margin-right: 500px;
-		}
-		
+
+/* Style for the checkbox and buttons */
+.menu-item input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.menu-item button {
+  width: 30px;
+  height: 30px;
+  background-color: #F4F3DA;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #E6B3C4;
+}
+
+		.menu-center {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+/* Add CSS to control the positioning of side1 and side2 */
+/* Flexbox for menu items */
+
+
+
+/* Add any other styles you need for side1 and side2 */
+/* Add CSS to control the positioning of side1 and side2 */
+#side1 {
+    float: left;
+	position:absolute; /* Make side1 float to the left */
+    /* Add some space between side1 and side2 */
+}
+
+#side2 {
+    float: right; 
+	padding-left: 230%;
+	position: absolute;
+	
+	
+	/*Make side2 float to the right */
+     /* Add some space between side1 and side2 */
+}
+#side2 table{
+	width: 50%;
+	position: absolute;
+}
+
+.delivery-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text content */
+  height: 100vh; /* This ensures the container takes the full viewport height */
+}
+.delivery-container fieldset {
+    background-image: url("Screenshot 2023-10-09 223753.png");
+    background-repeat: no-repeat;
+    background-size: cover; /* This will make the image cover the entire fieldset */
+    background-position: center center; /* Center the image both horizontally and vertically */
+    border-radius: 20px;
+    border: none;
+    opacity: 0.7;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.delivery-container h4{
+	color:#e2a9bc;
+			float: right;
+			margin-right: 700px;
+			font-size: 30px;
+			position: relative;
+			font-weight: thin;
+			margin-top: 20px;
+			padding: 20px 0;
+    margin: 0 20px;
+			font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			text-shadow: 2px 2px 1px rgb(239, 231, 231);
+}
+
+ .no1{
+	float: left;
+	margin-right: 100px;
+}
+table{
+
+	padding-bottom: 10%;
+	border: hidden;
+}
+
 
 	</style>
 </head>
@@ -423,149 +497,297 @@ fieldset{
 
 <section class="sec3" id="order">
 
-<div class="menu">
-	<div class="tag">
-		
-		<ul>
-		
-			<li>DONUT</li>
-			<li>HARGA</li>
-			<li>KUNTITI</li>
-	
-		</ul>
-	
-	</div>
-
-	
+	<div class="menu">
+		<div class="tag">
+			<div class="menu-center">
+				<ul>
+					<li>DONUT</li>
+					<li>HARGA</li>
+					<li>KUNTITI</li>
+				</ul>
+			</div>
+		</div>
+		<div id="side1" class="menu-container">
+			<div class="menu-item">
+				<div class="side1">
+					<table>
 		<div class="a">
-			<ul>
-		<li><p>Donut Chocolate</p></li> 
-		<li><p>RM 1.50</p></li>
-		<li class="d"> <button id="prev">-</button></li>
-		<li><span></span></li>
-		<li class="d"><input type="text" name=""></li>
-		<li class="d"><button id="">+</button> <input type="checkbox" name="checkbox"></li>
-		</ul>
+			<tr>
+		<td><p>Donut Chocolate</p></td>
+		<td><p>RM 1.50</p></td>
+		<td>
+			<button onclick="decrement('totalClicks1')" id="decrement1">-</button>
+		</td>
+		<td>
+			<span id="totalClicks1">0</span>
+		</td>
+		<td>
+			<button onclick="increment('totalClicks1')" id="increment1">+</button>
+		</td>
+		<td>
+			<input type="checkbox" name="checkbox" id="checkbox1">
+		</td>
+	</tr>
 	</div>
+	<tr>
+
 	<div class="b">
-		<ul>
-		<li><p>Donut white Chocolate</p> </li> 
-			<li><p>RM 1.50</p></li>
-			<li class="d"> <button id="prev">-</button></li>
-			<li><span></span></li>
-			<li class="d"><input type="text" name=""></li>
-			<li class="d"><button id="">+</button> <input type="checkbox" name="checkbox"></li>
-	  
-	</ul>
+		<td>
+		<p>Donut white Chocolate</p></td> 
+			<td><p>RM 1.50</p></td>
+			<td>
+				<button onclick="decrement('totalClicks2')" id="decrement2">-</button>
+			</td>
+			<td>
+				<span id="totalClicks2">0</span>
+			</td>
+			<td>
+				<button onclick="increment('totalClicks2')" id="increment2">+</button>	</td>
+				<td>
+				<input type="checkbox" name="checkbox" id="checkbox2"></td>
+		
+			
 	</div>
+</tr>
 	<div class="c">
 
-	<ul>
-	   <li><p>Donut red velvet</p> </li> 
-		<li><p>RM 0.50</p></li>
-		<li class="d"> <button id="prev">-</button></li>
-		<li><span></span></li>
-		<li class="d"><input type="text" name=""></li>
-		<li class="d"><button id="">+</button> <input type="checkbox" name="checkbox"></li>
-	</ul>
+	<tr>
+	 <td><p>Donut red velvet</p></td>  
+		<td><p>RM 0.50</p></td>
+		<td>
+			<button onclick="decrement('totalClicks3')" id="decrement3">-</button>
+		</td>
+		<td>
+			<span id="totalClicks3">0</span>
+		</td>
+		<td>
+			<button onclick="increment('totalClicks3')" id="increment3">+</button></td>
+			<td><input type="checkbox" name="checkbox" id="checkbox3">
+			</td>
+	</tr>
 </div>
 <div class="e">
 
-	<ul>
-	   <li><p>Donut no topping</p>
-	<li><p>RM 0.50</p></li>
-		<li class="d"> <button id="prev">-</button></li>
-		<li><span></span></li>
-		<li class="d"><input type="text" name=""></li>
-		<li class="d"><button id="">+</button> <input type="checkbox" name="checkbox"></li>
-</li> 
+	<tr>
+	   <td><p>Donut no topping</p></td>
+	<td><p>RM 0.50</p></td>
+	<td>
+		<button onclick="decrement('totalClicks4')" id="decrement4">-</button>
+	</td>
+	<td>
+		<span id="totalClicks4">0</span>
+	</td>
+	<td>
+		<button onclick="increment('totalClicks4')" id="increment4">+</button></td>
+		<td><input type="checkbox" name="checkbox" id="checkbox4">
+		</td>
+</tr>
+	</div>
+	</table>
+	<table >
+		<div class="a">
+			<tr>
+		<td><p>Donut Chocolate</p></td>
+		<td><p>RM 1.50</p></td>
+		<td>
+			<button onclick="decrement('totalClicks1')" id="decrement1">-</button>
+		</td>
+		<td>
+			<span id="totalClicks1">0</span>
+		</td>
+		<td>
+			<button onclick="increment('totalClicks1')" id="increment1">+</button>
+		</td>
+		<td>
+			<input type="checkbox" name="checkbox" id="checkbox1">
+		</td>
+	</tr>
+	</div>
+	<tr>
 
-	</ul>
+	<div class="b">
+		<td>
+		<p>Donut white Chocolate</p></td> 
+			<td><p>RM 1.50</p></td>
+			<td>
+				<button onclick="decrement('totalClicks2')" id="decrement2">-</button>
+			</td>
+			<td>
+				<span id="totalClicks2">0</span>
+			</td>
+			<td>
+				<button onclick="increment('totalClicks2')" id="increment2">+</button>	</td>
+				<td>
+				<input type="checkbox" name="checkbox" id="checkbox2"></td>
+		
+			
+	</div>
+</tr>
+	<div class="c">
+
+	<tr>
+	 <td><p>Donut red velvet</p></td>  
+		<td><p>RM 0.50</p></td>
+		<td>
+			<button onclick="decrement('totalClicks3')" id="decrement3">-</button>
+		</td>
+		<td>
+			<span id="totalClicks3">0</span>
+		</td>
+		<td>
+			<button onclick="increment('totalClicks3')" id="increment3">+</button></td>
+			<td><input type="checkbox" name="checkbox" id="checkbox3">
+			</td>
+	</tr>
+</div>
+<div class="e">
+
+	<tr>
+	   <td><p>Donut no topping</p></td>
+	<td><p>RM 0.50</p></td>
+	<td>
+		<button onclick="decrement('totalClicks4')" id="decrement4">-</button>
+	</td>
+	<td>
+		<span id="totalClicks4">0</span>
+	</td>
+	<td>
+		<button onclick="increment('totalClicks4')" id="increment4">+</button></td>
+		<td><input type="checkbox" name="checkbox" id="checkbox4">
+		</td>
+</tr>
+	</div>
+	</table>
+</div>
 </div>
 
-	</section>
-	<!-- <section class="sec3" id="order">
 
-		<div class="menu">
+
+
+	
+	
+	<div id="side2" class="menu-container">
+		<div class="menu-item">
+			
+			<table >
+				<div class="a">
+					<tr>
+				<td><p>Donut Chocolate</p></td>
+				<td><p>RM 1.50</p></td>
+				<td>
+					<button onclick="decrement('totalClicks1')" id="decrement1">-</button>
+				</td>
+				<td>
+					<span id="totalClicks1">0</span>
+				</td>
+				<td>
+					<button onclick="increment('totalClicks1')" id="increment1">+</button>
+				</td>
+				<td>
+					<input type="checkbox" name="checkbox" id="checkbox1">
+				</td>
+			</tr>
+			</div>
+			<tr>
 		
-			<ul>
-				<li>DONUT</p><p> HARGA <p>KUANTITI</p></li>
-				<li>Donut<p>Donut susu</p><p>Donut Strawberry</p> <p>Donut Chocolate</p>
-				</li> 
-				<li>harga</li> <p>RM 3.50</p> <p>RM 3.50</p> <p>RM 3.50</p>
-				<li>Kuantiti</li></ul> <button id="prev">-</button>
-				<span></span>
-				<input type="text" name="">
-				<button id="">+</button>  <input type="checkbox" name="checkbox">
+			<div class="b">
+				<td>
+				<p>Donut white Chocolate</p></td> 
+					<td><p>RM 1.50</p></td>
+					<td>
+						<button onclick="decrement('totalClicks2')" id="decrement2">-</button>
+					</td>
+					<td>
+						<span id="totalClicks2">0</span>
+					</td>
+					<td>
+						<button onclick="increment('totalClicks2')" id="increment2">+</button>	</td>
+						<td>
+						<input type="checkbox" name="checkbox" id="checkbox2"></td>
 				
-				<br>
+					
+			</div>
+		</tr>
+			<div class="c">
 		
-				 <button id="prev">-</button>
-				<span></span>
-				<input type="text" name=""> 
-				<button id="">+</button> <input type="checkbox" name="checkbox">
+			<tr>
+			 <td><p>Donut red velvet</p></td>  
+				<td><p>RM 0.50</p></td>
+				<td>
+					<button onclick="decrement('totalClicks3')" id="decrement3">-</button>
+				</td>
+				<td>
+					<span id="totalClicks3">0</span>
+				</td>
+				<td>
+					<button onclick="increment('totalClicks3')" id="increment3">+</button></td>
+					<td><input type="checkbox" name="checkbox" id="checkbox3">
+					</td>
+			</tr>
+		</div>
+		<div class="e">
 		
-				<br>
-			   <button id="prev">-</button>
-				<span></span>
-				<input type="text" name=""> 
-				<button id="">+</button> <input type="checkbox" name="checkbox">
-		
-				<br>
-			  <br>
-				<br>
-		
-			</section> -->
+			<tr>
+			   <td><p>Donut no topping</p></td>
+			<td><p>RM 0.50</p></td>
+			<td>
+				<button onclick="decrement('totalClicks4')" id="decrement4">-</button>
+			</td>
+			<td>
+				<span id="totalClicks4">0</span>
+			</td>
+			<td>
+				<button onclick="increment('totalClicks4')" id="increment4">+</button></td>
+				<td><input type="checkbox" name="checkbox" id="checkbox4">
+				</td>
+		</tr>
+			</div>
+			</table>
+</div>
+</div>
+</div>
+</div>
+	</section>
+	
 
 	<section class="sec4" id="pay">
 		<div class="item">
 
 <fieldset>	
+	
 <h3>Order List</h3>
+<div id="no1">
 <h5>Item</h5>
 <p>Donut White Chocolate - 1</p>
 <p>Donut No Topping - 2</p>
 <p>Cupcake Chocolate Cookies and Cream - 2</p>
 <p>Red Velvet Cream Cheese</p>
-
+</div>
+<div id="no2">
 <h5>Harga</h5>
 <p>RM 1.50</p>
 <p>RM 1.00</p>
 <p>RM 3.00</p>
 <p>RM 3.00</p>
 <p>Total : RM 8.50</p>
+</div>
 </fieldset>
 
 </div>
 </section>
 <section class="sec5" id="order">
-
-
-<div class="delivery">
-	
-	<h4>Choose How to take : </h4>
-   
-<fieldset>
-	
-	<button>Delivery</button>
-	<p>or</p>
-	<button>Pick Up</button>
-
-</fieldset>
-
-</div>
-	
-<p> contact </p>
-<input type="text" name="nama" placeholder="Enter your name">
-<br>
-<input type="text" name="nombor" placeholder="Enter your full number">	
-	</ul>
-</div>
-
-</div>
-
-</section>
+	<div class="delivery-container">
+	  <h4>Choose How to take:</h4>
+	  <fieldset>
+		<button><a href="payment.html">Delivery</a></button>
+		<p>or</p>
+		<button>Pick Up</button>
+	  </fieldset>
+	</div>
+  </section>
+  
 <script src="backery.js"></script>
+
 </body>
 
 </html>
