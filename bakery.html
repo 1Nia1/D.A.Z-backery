@@ -1,381 +1,469 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<style>
-		html{
-			scroll-behavior: smooth;
-
-		}
-		body{
-			background-color: rgb(249, 216, 221);
-			
-			
+<head><style>
+	html{
+		scroll-behavior: smooth;
+	  
+	  }
+	  body{
+		background-color: rgb(249, 216, 221);
 		
-		}
-		.banner p{
-			color:#E6B3C4;
-			float: right;
-			margin-right: 700px;
-			font-size: 50px;
-			position: relative;
-			font-weight: thin;
-			margin-top: 20px;
-			padding: 20px 0;
-    margin: 0 20px;
-			font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-			text-shadow: 1px 1px 1px rgb(161, 161, 161);
-		}
-		img{
-			width: 5%;
-			margin-left: 9%;
-			margin-bottom: 2%;
-			margin-top: 2%;
-		}
-		.sec2{
-			background-image: url('photo_2023-09-18_14-21-54.jpg');
-			background-repeat:no-repeat;
-			background-size: 100%,50%;
-          	 padding-bottom: 50%;
-     		 
-		}
-		/* Add this CSS to your existing styles */
-.sec3 {
-  background-image: url('photo_2023-09-18_14-21-54.jpg');
-  background-repeat: no-repeat;
-  background-size: 100%, 50%;
-  padding-bottom: 50%;
-}
-
-
-		.sec4{
-			background-image: url('photo_2023-09-18_14-21-54.jpg');
-			background-repeat:no-repeat;
-			background-size: 100%,50%;
-          	 padding-top: 20%;
-     		 
-		}
-		.sec5{
-			background-image: url('photo_2023-09-18_14-21-54.jpg');
-			background-repeat:no-repeat;
-			background-size: 100%,50%;
-          	 padding-bottom: 50%;
-     		 
-		}
-	
-		.btop{
-			position: sticky;
-			z-index: 999;
-			top: 0;
-		}
-		.nav ul{
-			list-style-type: none;
-			margin-left: 40px;
-			
-
-		}
-		.nav ul li{
-			float: left;
-			padding-left: 50px;
-			font-size: 25px;
-			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-		}
-		.nav a{
-			color: #F4F3DA;
-			text-decoration: none;
-			font-weight: bold;
-			
-		}
-		.nav a span{
-			font-size: 15px;
-			margin-left: 10px;
-		}
-		.nav a:hover{
-			text-shadow: 1px 1px 0px grey;
-		}
-
-		.banner{
-			background-color:#F4F3DA;
-			font-family: cursive;
-			position: relative;
-
-			
-			
-		}
-		.banner a{
-			color: #E6B3C4;
-
-		}
-		.title {
-			margin-top: 150px;
-			margin-left: 220px;
-
-		}
-		.title p{
-			font-family:Verdana, Geneva, Tahoma, sans-serif;
-			text-shadow: 2px 2px 2px rgb(251, 179, 179);
-			color: #F4F3DA;
-			font-weight: bolder;
-			font-size: 35px;
-			margin-top: -40px;
-		}
-		.sec1{
-			background-image: url('photo_2023-09-18_14-21-54.jpg');
-			background-repeat:no-repeat;
-			background-size: 100%,50%;
-          	 padding-bottom: 50%;
-     		 
-			
-
-		}
-
 		
-		.hantar input{
-			margin-top: 50px;
-			margin-left: 246px;
-			border:none;
-			padding: 10px;
-			border-radius: 25px;
-			padding-left: 50.5px;
-			padding-right: 50.5px;
-			background-color: #F4F3DA;
-			color:#E6B3C4;
-			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-			font-size: 20px;
-			font-weight: bold;
+	  
+	  }
+	  .banner p{
+		color:#E6B3C4;
+		float: right;
+		margin-right: 700px;
+		font-size: 50px;
+		position: relative;
+		font-weight: thin;
+		margin-top: 20px;
+		padding: 20px 0;
+		margin: 0 20px;
+		font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		text-shadow: 1px 1px 1px rgb(161, 161, 161);
+	  }
+	  img{
+		width: 5%;
+		margin-left: 9%;
+		margin-bottom: 2%;
+		margin-top: 2%;
+	  }
+	  .sec2{
+		background-image: url('photo_2023-09-18_14-21-54.jpg');
+		background-repeat:no-repeat;
+		background-size: 100%,50%;
+			   padding-bottom: 50%;
 			
-		}
-		.open{
-			margin-left: 900px;
-			margin-top: 100px;
-			background-color: #F4F3DA;
-			border-radius: 25px;
-			opacity: 0.9;
-			position: static;
+	  }
+	  /* Add this CSS to your existing styles */
+	  .sec3 {
+	  background-image: url('photo_2023-09-18_14-21-54.jpg');
+	  background-repeat: no-repeat;
+	  background-size: 100%, 50%;
+	  padding-bottom: 50%;
+	  }
+	  
+	  
+	  .sec4{
+		background-image: url('photo_2023-09-18_14-21-54.jpg');
+		background-repeat:no-repeat;
+		background-size: 100%,50%;
+			   padding-bottom: 20%;
 			
-		
-
-		}
-		.open p{
-			text-align: center;
-			color: grey;
-			font-weight: bold;
-			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-		}
-
-
-		.f1 {
-  text-align: center;
-  padding-bottom: 50px;
-}
-
-.f1 ul {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
-  justify-content: center; /* Center items horizontally */
-}
-
-.f1 li {
-  padding: 10px;
-  width: 25%; /* Make each item take up 25% of the container width */
-  box-sizing: border-box; /* Include padding and borders in the width calculation */
-}
-fieldset{
-			background-color: #e3a4b7;
-			border-radius: 20px;
-			border: none;
-			opacity:  0.7;
+	  }
+	  .sec5{
+		background-image: url('photo_2023-09-18_14-21-54.jpg');
+		background-repeat:no-repeat;
+		background-size: 100%,50%;
+			   padding-bottom: 50%;
 			
-
-		}
-		.f1 fieldset img{
-			min-width: 190px;
-			opacity: none;
-		}
-
-		.gmbr {
-  		  text-align: left; 
- 		 position: absolute;
-  		margin-top: 220px;
-		  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-		  font-weight: bold;
-		  
-		}
-
-		.gmbr ul {
-		padding: 0;
+	  }
+	  
+	  .btop{
+		position: sticky;
+		z-index: 999;
+		top: 0;
+	  }
+	  .nav ul{
 		list-style-type: none;
-		display: flex; 
-		}
-
-		.gmbr ul li {
-		margin: 5px; 
-		}
-		.gmbr img{
-			margin-bottom: -7px;
-			
-		}
-   .sec3{
-	background-image: url('photo_2023-09-18_14-21-54.jpg');
-			background-repeat:no-repeat;
-			background-size: 100%,50%;
-          	 padding-bottom: 50%;
-   }
-
-   .menu ul{
-	padding-top: 20px;
-   }
-
-		.item{
-			text-align: center;
-		}
-		.item h3{
-			text-decoration-line: line-through;
-		}
-		.title2{
-			font-size: 20px;
-			position: relative;
-			margin-top: -26px;
-			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;			
-			text-shadow: 1px 1px 1px rgb(161, 161, 161);
-			color: #F4F3DA;
-		}
-		.title2 p{
-			text-align: center;
-			margin-left: -510px;
-			margin-bottom: -15px;
-			
-		}
-		.menu{
-			padding-top: 10px;
-		}
-		.menu .tag{
-			border-bottom: 1px solid black;
-			padding: 10px;
-
-		}
+		margin-left: 40px;
 		
-		.menu .tag li{
-			float:left;
-			margin-left: 50px;
-
-		}
-		 ul{
-			list-style-type: none;
-		}
-
-
-		.menu-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-
-
-/* Style for the checkbox and buttons */
-.menu-item input[type="checkbox"] {
-  margin-right: 5px;
-}
-
-.menu-item button {
-  width: 30px;
-  height: 30px;
-  background-color: #F4F3DA;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 20px;
-  color: #E6B3C4;
-}
-
-		.menu-center {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-}
-/* Add CSS to control the positioning of side1 and side2 */
-/* Flexbox for menu items */
-
-
-
-/* Add any other styles you need for side1 and side2 */
-/* Add CSS to control the positioning of side1 and side2 */
-#side1 {
-    float: left;
-	position:absolute;
-	padding-left: 5%; /* Make side1 float to the left */
-    /* Add some space between side1 and side2 */
-}
-
-#side2 {
-    float: right; 
-	padding-left: 150%;
-	position: absolute;
-	padding-bottom: 50%;
-	
-	
-	/*Make side2 float to the right */
-     /* Add some space between side1 and side2 */
-}
-#side2 table{
-	width: 50%;
-	position: absolute;
-	
-}
-
-.delivery-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center items vertically */
-  align-items: center; /* Center items horizontally */
-  text-align: center; /* Center text content */
-  height: 100vh; /* This ensures the container takes the full viewport height */
-}
-.delivery-container fieldset {
-    background-image: url("Screenshot 2023-10-09 223753.png");
-    background-repeat: no-repeat;
-    background-size: cover; /* This will make the image cover the entire fieldset */
-    background-position: center center; /* Center the image both horizontally and vertically */
-    border-radius: 20px;
-    border: none;
-    opacity: 0.7;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.delivery-container h4{
-	color:#e2a9bc;
-			float: right;
-			margin-right: 700px;
-			font-size: 30px;
-			position: relative;
-			font-weight: thin;
-			margin-top: 20px;
-			padding: 20px 0;
-    margin: 0 20px;
-			font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-			text-shadow: 2px 2px 1px rgb(239, 231, 231);
-}
-
- .no1{
-	float: left;
-	margin-right: 100px;
-}
-table{
-
-	padding-bottom: 5%;
-	border: hidden;
-}
-
-
+	  
+	  }
+	  .nav ul li{
+		float: left;
+		padding-left: 50px;
+		font-size: 25px;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	  
+	  }
+	  .nav a{
+		color: #F4F3DA;
+		text-decoration: none;
+		font-weight: bold;
+		
+	  }
+	  .nav a span{
+		font-size: 15px;
+		margin-left: 10px;
+	  }
+	  .nav a:hover{
+		text-shadow: 1px 1px 0px grey;
+	  }
+	  
+	  .banner{
+		background-color:#F4F3DA;
+		font-family: cursive;
+		position: relative;
+	  
+		
+		
+	  }
+	  .banner a{
+		color: #E6B3C4;
+	  
+	  }
+	  .title {
+		margin-top: 150px;
+		margin-left: 220px;
+	  
+	  }
+	  .title p{
+		font-family:Verdana, Geneva, Tahoma, sans-serif;
+		text-shadow: 2px 2px 2px rgb(251, 179, 179);
+		color: #F4F3DA;
+		font-weight: bolder;
+		font-size: 35px;
+		margin-top: -40px;
+	  }
+	  .sec1{
+		background-image: url('photo_2023-09-18_14-21-54.jpg');
+		background-repeat:no-repeat;
+		background-size: 100%,50%;
+			   padding-bottom: 50%;
+			
+		
+	  
+	  }
+	  
+	  
+	  .hantar input{
+		margin-top: 50px;
+		margin-left: 246px;
+		border:none;
+		padding: 10px;
+		border-radius: 25px;
+		padding-left: 50.5px;
+		padding-right: 50.5px;
+		background-color: #F4F3DA;
+		color:#E6B3C4;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-size: 20px;
+		font-weight: bold;
+		
+	  }
+	  .open{
+		margin-left: 900px;
+		margin-top: 100px;
+		background-color: #F4F3DA;
+		border-radius: 25px;
+		opacity: 0.9;
+		position: static;
+		
+	  
+	  
+	  }
+	  .open p{
+		text-align: center;
+		color: grey;
+		font-weight: bold;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	  
+	  }
+	  
+	  
+	  .f1 {
+	  text-align: center;
+	  padding-bottom: 50px;
+	  }
+	  
+	  .f1 ul {
+	  list-style-type: none;
+	  display: flex;
+	  flex-wrap: wrap; /* Allow items to wrap to the next line */
+	  justify-content: center; /* Center items horizontally */
+	  }
+	  
+	  .f1 li {
+	  padding: 10px;
+	  width: 25%; /* Make each item take up 25% of the container width */
+	  box-sizing: border-box; /* Include padding and borders in the width calculation */
+	  }
+	  fieldset{
+		background-color: #e3a4b7;
+		border-radius: 20px;
+		border: none;
+		opacity:  0.7;
+		
+	  
+	  }
+	  .f1 fieldset img{
+		min-width: 190px;
+		opacity: none;
+	  }
+	  
+	  .gmbr {
+		  text-align: left; 
+		position: absolute;
+		margin-top: 220px;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-weight: bold;
+		
+	  }
+	  
+	  .gmbr ul {
+	  padding: 0;
+	  list-style-type: none;
+	  display: flex; 
+	  }
+	  
+	  .gmbr ul li {
+	  margin: 5px; 
+	  }
+	  .gmbr img{
+		margin-bottom: -7px;
+		
+	  }
+	  .sec3{
+	  background-image: url('photo_2023-09-18_14-21-54.jpg');
+		background-repeat:no-repeat;
+		background-size: 100%,50%;
+			   padding-bottom: 50%;
+	  }
+	  
+	  .menu ul{
+	  padding-top: 20px;
+	  }
+	  
+	  .item{
+		text-align: center;
+		margin-bottom: 55%;
+	  }
+	  .item h3{
+		text-decoration-line: line-through;
+	  }
+	  .title2{
+		font-size: 20px;
+		position: relative;
+		margin-top: -26px;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;			
+		text-shadow: 1px 1px 1px rgb(161, 161, 161);
+		color: #F4F3DA;
+	  }
+	  .title2 p{
+		text-align: center;
+		margin-left: -510px;
+		margin-bottom: -15px;
+		
+	  }
+	  .menu{
+		padding-top: 10px;
+	  }
+	  .menu .tag{
+		border-bottom: 1px solid black;
+		padding: 10px;
+	  
+	  }
+	  
+	  .menu .tag li{
+		float:left;
+		margin-left: 50px;
+	  
+	  }
+	   ul{
+		list-style-type: none;
+	  }
+	  
+	  
+	  .menu-container {
+	  display: flex;
+	  justify-content: space-between;
+	  flex-wrap: wrap;
+	  }
+	  
+	  
+	  
+	  /* Style for the checkbox and buttons */
+	  .menu-item input[type="checkbox"] {
+	  margin-right: 5px;
+	  }
+	  
+	  .menu-item button {
+	  width: 30px;
+	  height: 30px;
+	  background-color: #F4F3DA;
+	  border: none;
+	  border-radius: 50%;
+	  cursor: pointer;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  font-weight: bold;
+	  font-size: 20px;
+	  color: #E6B3C4;
+	  }
+	  
+	  .menu-center {
+	  display: flex;
+	  justify-content: center; /* Center horizontally */
+	  align-items: center; /* Center vertically */
+	  }
+	  /* Add CSS to control the positioning of side1 and side2 */
+	  /* Flexbox for menu items */
+	  
+	  
+	  
+	  /* Add any other styles you need for side1 and side2 */
+	  /* Add CSS to control the positioning of side1 and side2 */
+	  #side1 {
+	  float: left;
+	  position:absolute;
+	  padding-left: 5%; /* Make side1 float to the left */
+	  /* Add some space between side1 and side2 */
+	  }
+	  
+	  #side2 {
+	  float: right; 
+	  padding-left: 150%;
+	  position: absolute;
+	  padding-bottom: 50%;
+	  
+	  
+	  /*Make side2 float to the right */
+	   /* Add some space between side1 and side2 */
+	  }
+	  #side2 table{
+	  width: 50%;
+	  position: absolute;
+	  
+	  }
+	  
+	  .delivery-container {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center; /* Center items vertically */
+	  align-items: center; /* Center items horizontally */
+	  text-align: center; /* Center text content */
+	  height: 100vh; /* This ensures the container takes the full viewport height */
+	  }
+	  .delivery-container fieldset {
+	  background-image: url("Screenshot 2023-10-09 223753.png");
+	  background-repeat: no-repeat;
+	  background-size: cover; /* This will make the image cover the entire fieldset */
+	  background-position: center center; /* Center the image both horizontally and vertically */
+	  border-radius: 20px;
+	  border: none;
+	  opacity: 0.7;
+	  padding-left: 300px;
+	  padding-right: 300px;
+	  padding-top: 100px;
+	  padding-bottom: 100px;
+	  position: relative;
+	  }
+	  .delivery-container h4{
+	  color:#e2a9bc;
+		float: right;
+		margin-right: 700px;
+		font-size: 30px;
+		position: relative;
+		font-weight: thin;
+		margin-top: 20px;
+		padding: 20px 0;
+	  margin: 0 20px;
+		font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		text-shadow: 2px 2px 1px rgb(239, 231, 231);
+	  }
+	  
+	  .no1{
+	  float: left;
+	  margin-right: 100px;
+	  }
+	  table{
+	  padding-bottom: 5%;
+	  border: hidden;
+	  }
+	  
+	  /* Add these styles to float the buttons */
+	  .box-btn1 {
+	  float: left; /* "Delivery" button will stay on the left */
+	  margin-right: 590px;
+	  }
+	  
+	  .box-btn2 {
+	  float: right; /* "Pick Up" button will stay on the right */
+	  margin-right: 230px;
+	  
+	  }
+	  
+	  .box-btn1 button{
+	  padding: 40px;
+	  width:20%;
+	  float: left;
+	  border-radius: 20px;
+	  background-color: aliceblue;
+	  color: #e2a9bc;
+	  border: 1px solid aliceblue;
+	  position: absolute;
+	  
+	  }
+	  .box-btn2 button{
+	  padding: 40px;
+	  width:20%;
+	  float: right;
+	  border: 1px solid aliceblue;
+	  border-radius: 20px;
+	  background-color: aliceblue;
+	  color: #e2a9bc;
+	  position: absolute;
+	  
+	  }
+	  
+	  fieldset span{
+	  position:absolute;
+	  padding-top: 20px;
+	  color: #e2a9bc;
+	  font-family: Regular, "PT Sans", Calibri, Tahoma, sans-serif;
+	  }
+	  
+	  @font-face {
+	  font-family: Regular;
+	  src: url('Chewy/Chewy-Regular') format('Regular');
+	  font-style: normal;
+	  font-weight: 300 800;
+	  }
+	  @font-face {
+	  font-family: Raleway;
+	  src: url('fonts/raleway/Raleway-Italic.woff2') format('woff2');
+	  font-weight: 300 800;
+	  font-style: italic;
+	  }
+	  
+	  .btn3 input{
+		position: absolute;
+		margin-left: 80%;  
+		margin-top:40% ;
+		border:none;
+		padding: 10px;
+		border-radius: 25px;
+		padding-left: 50.5px;
+		padding-right: 50.5px;
+		background-color: #F4F3DA;
+		color:#E6B3C4;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-size: 20px;
+		font-weight: bold;
+	  }
+	  .item fieldset{
+	  border-radius: 30px;
+	  margin: 10%;
+	  padding: 5%;
+	  text-align: left;
+	  
+	  
+	  
+	  }
+	  .harga ul li{
+	  margin-left: 10px;
+	  
+	  }
+	  fieldset .tag{
+	  border-bottom: 1px solid black;
+	  }
+	  fieldset h3{
+	  text-align: center;
+	  }
 	</style>
 </head>
 <body>
@@ -445,7 +533,7 @@ table{
 </li>
 <li>
 <fieldset>
-	<img src="Screenshot 2023-09-19 105942.png">
+	<img src="1.png">
 	<p>Donat </p><p>Strawberry</p>
 </fieldset>
 </li>
@@ -488,7 +576,7 @@ table{
 </li>
 <li>
 <fieldset>
-	<img src="Screenshot 2023-09-19 112637.png">
+	<img src="9.png">
 	<p>Cupcake <br>vanilla</p>
 </fieldset>
 </li>
@@ -499,7 +587,7 @@ table{
 </section>
 
 <section class="sec3" id="order">
-
+<form action="" method="post">
 	<div class="menu">
 		
 		<div id="side1" class="menu-container">
@@ -520,16 +608,16 @@ table{
 		<td><p>Donut Chocolate</p></td>
 		<td><p>RM 1.50</p></td>
 		<td>
-			<button onclick="decrement('totalClicks1')" id="decrement1">-</button>
+			<button onclick="decrement('totalClicks1')" id="decrement1" name='decrement1'>-</button>
 		</td>
 		<td>
-			<span id="totalClicks1">0</span>
+			<span id="totalClicks1"  name='totalClicks1'>0</span>
 		</td>
 		<td>
-			<button onclick="increment('totalClicks1')" id="increment1">+</button>
+			<button onclick="increment('totalClicks1')" id="increment1"  name='increment1'>+</button>
 		</td>
 		<td>
-			<input type="checkbox" name="checkbox" id="checkbox1">
+			<input type="checkbox" name="checkbox" id="checkbox1"  >
 		</td>
 	</tr>
 	</div>
@@ -540,15 +628,15 @@ table{
 		<p>Donut white Chocolate</p></td> 
 			<td><p>RM 1.50</p></td>
 			<td>
-				<button onclick="decrement('totalClicks2')" id="decrement2">-</button>
+				<button onclick="decrement('totalClicks2')" id="decrement2"  name=''>-</button>
 			</td>
 			<td>
-				<span id="totalClicks2">0</span>
+				<span id="totalClicks2"  name='totalClicks2'>0</span>
 			</td>
 			<td>
-				<button onclick="increment('totalClicks2')" id="increment2">+</button>	</td>
+				<button onclick="increment('totalClicks2')" id="increment2"  name=''>+</button>	</td>
 				<td>
-				<input type="checkbox" name="checkbox" id="checkbox2"></td>
+				<input type="checkbox" name="checkbox" id="checkbox2"  name=''></td>
 		
 			
 	</div>
@@ -559,14 +647,14 @@ table{
 	 <td><p>Donut red velvet</p></td>  
 		<td><p>RM 0.50</p></td>
 		<td>
-			<button onclick="decrement('totalClicks3')" id="decrement3">-</button>
+			<button onclick="decrement('totalClicks3')" id="decrement3"  name=''>-</button>
 		</td>
 		<td>
-			<span id="totalClicks3">0</span>
+			<span id="totalClicks3"  name='totalClicks3'>0</span>
 		</td>
 		<td>
-			<button onclick="increment('totalClicks3')" id="increment3">+</button></td>
-			<td><input type="checkbox" name="checkbox" id="checkbox3">
+			<button onclick="increment('totalClicks3')" id="increment3"  name=''>+</button></td>
+			<td><input type="checkbox" name="checkbox" id="checkbox3"  name=''>
 			</td>
 	</tr>
 </div>
@@ -576,14 +664,14 @@ table{
 	   <td><p>Donut no topping</p></td>
 	<td><p>RM 0.50</p></td>
 	<td>
-		<button onclick="decrement('totalClicks4')" id="decrement4">-</button>
+		<button onclick="decrement('totalClicks4')" id="decrement4"  name=''>-</button>
 	</td>
 	<td>
-		<span id="totalClicks4">0</span>
+		<span id="totalClicks4"  name='totalClicks4'>0</span>
 	</td>
 	<td>
-		<button onclick="increment('totalClicks4')" id="increment4">+</button></td>
-		<td><input type="checkbox" name="checkbox" id="checkbox4">
+		<button onclick="increment('totalClicks4')" id="increment4"  name=''>+</button></td>
+		<td><input type="checkbox" name="checkbox" id="checkbox4"  name=''>
 		</td>
 </tr>
 	</div>
@@ -597,22 +685,23 @@ table{
 			</ul>
 		</div>
 	</div>
+	
 	<table >
 		<div class="a">
 			<tr>
 		<td><p>Donut Chocolate</p></td>
 		<td><p>RM 1.50</p></td>
 		<td>
-			<button onclick="decrement('totalClicks1')" id="decrement1">-</button>
+			<button onclick="decrement('totalClicks5')" id="decrement5"  name=''>-</button>
 		</td>
 		<td>
-			<span id="totalClicks1">0</span>
+			<span id="totalClicks5 "  name='totalClicks5'>0</span>
 		</td>
 		<td>
-			<button onclick="increment('totalClicks1')" id="increment1">+</button>
+			<button onclick="increment('totalClicks5')" id="increment5"  name=''>+</button>
 		</td>
 		<td>
-			<input type="checkbox" name="checkbox" id="checkbox1">
+			<input type="checkbox" name="checkbox" id="checkbox5"  name=''>
 		</td>
 	</tr>
 	</div>
@@ -623,15 +712,15 @@ table{
 		<p>Donut white Chocolate</p></td> 
 			<td><p>RM 1.50</p></td>
 			<td>
-				<button onclick="decrement('totalClicks2')" id="decrement2">-</button>
+				<button onclick="decrement('totalClicks6')" id="decrement6"  name=''>-</button>
 			</td>
 			<td>
-				<span id="totalClicks2">0</span>
+				<span id="totalClicks6"  name='totalClicks6'>0</span>
 			</td>
 			<td>
-				<button onclick="increment('totalClicks2')" id="increment2">+</button>	</td>
+				<button onclick="increment('totalClicks6')" id="increment6"  name=''>+</button>	</td>
 				<td>
-				<input type="checkbox" name="checkbox" id="checkbox2"></td>
+				<input type="checkbox" name="checkbox" id="checkbox6"  name=''></td>
 		
 			
 	</div>
@@ -642,14 +731,14 @@ table{
 	 <td><p>Donut red velvet</p></td>  
 		<td><p>RM 0.50</p></td>
 		<td>
-			<button onclick="decrement('totalClicks3')" id="decrement3">-</button>
+			<button onclick="decrement('totalClicks7')" id="decrement7"  name=''>-</button>
 		</td>
 		<td>
-			<span id="totalClicks3">0</span>
+			<span id="totalClicks7"  name='totalClicks7'>0</span>
 		</td>
 		<td>
-			<button onclick="increment('totalClicks3')" id="increment3">+</button></td>
-			<td><input type="checkbox" name="checkbox" id="checkbox3">
+			<button onclick="increment('totalClicks7')" id="increment7"  name=''>+</button></td>
+			<td><input type="checkbox" name="checkbox" id="checkbox7"  name=''>
 			</td>
 	</tr>
 </div>
@@ -659,18 +748,19 @@ table{
 	   <td><p>Donut no topping</p></td>
 	<td><p>RM 0.50</p></td>
 	<td>
-		<button onclick="decrement('totalClicks4')" id="decrement4">-</button>
+		<button onclick="decrement('totalClicks8')" id="decrement8"  name=''>-</button>
 	</td>
 	<td>
-		<span id="totalClicks4">0</span>
+		<span id="totalClicks8"  name='totalClicks8'>0</span>
 	</td>
 	<td>
-		<button onclick="increment('totalClicks4')" id="increment4">+</button></td>
-		<td><input type="checkbox" name="checkbox" id="checkbox4">
+		<button onclick="increment('totalClicks8')" id="increment8"  name=''>+</button></td>
+		<td><input type="checkbox" name="checkbox" id="checkbox8"  name=''>
 		</td>
 </tr>
 	</div>
 	</table>
+
 </div>
 </div>
 
@@ -689,22 +779,22 @@ table{
 					</ul>
 				</div>
 				</div>
-			<table >
+			<table>
 				<div class="a">
 					<tr>
 				<td><p>Donut Chocolate</p></td>
 				<td><p>RM 1.50</p></td>
 				<td>
-					<button onclick="decrement('totalClicks1')" id="decrement1">-</button>
+					<button onclick="decrement('totalClicks9')" id="decrement9"  name=''>-</button>
 				</td>
 				<td>
-					<span id="totalClicks1">0</span>
+					<span id="totalClicks9"  name='totalClicks9'>0</span>
 				</td>
 				<td>
-					<button onclick="increment('totalClicks1')" id="increment1">+</button>
+					<button onclick="increment('totalClicks9')" id="increment9"  name=''>+</button>
 				</td>
 				<td>
-					<input type="checkbox" name="checkbox" id="checkbox1">
+					<input type="checkbox" name="checkbox" id="checkbox9"  name=''>
 				</td>
 			</tr>
 			</div>
@@ -715,15 +805,15 @@ table{
 				<p>Donut white Chocolate</p></td> 
 					<td><p>RM 1.50</p></td>
 					<td>
-						<button onclick="decrement('totalClicks2')" id="decrement2">-</button>
+						<button onclick="decrement('totalClicks10')" id="decrement10"  name=''>-</button>
 					</td>
 					<td>
-						<span id="totalClicks2">0</span>
+						<span id="totalClicks10"  name='totalClicks10'>0</span>
 					</td>
 					<td>
-						<button onclick="increment('totalClicks2')" id="increment2">+</button>	</td>
+						<button onclick="increment('totalClicks10')" id="increment10"  name=''>+</button>	</td>
 						<td>
-						<input type="checkbox" name="checkbox" id="checkbox2"></td>
+						<input type="checkbox" name="checkbox" id="checkbox10"  name=''></td>
 				
 					
 			</div>
@@ -734,14 +824,14 @@ table{
 			 <td><p>Donut red velvet</p></td>  
 				<td><p>RM 0.50</p></td>
 				<td>
-					<button onclick="decrement('totalClicks3')" id="decrement3">-</button>
+					<button onclick="decrement('totalClicks11')" id="decrement11"  name=''>-</button>
 				</td>
 				<td>
-					<span id="totalClicks3">0</span>
+					<span id="totalClicks11"  name='totalClicks11'>0</span>
 				</td>
 				<td>
-					<button onclick="increment('totalClicks3')" id="increment3">+</button></td>
-					<td><input type="checkbox" name="checkbox" id="checkbox3">
+					<button onclick="increment('totalClicks11')" id="increment11"  name=''>+</button></td>
+					<td><input type="checkbox" name="checkbox" id="checkbox11" name=''>
 					</td>
 			</tr>
 		</div>
@@ -751,46 +841,149 @@ table{
 			   <td><p>Donut no topping</p></td>
 			<td><p>RM 0.50</p></td>
 			<td>
-				<button onclick="decrement('totalClicks4')" id="decrement4">-</button>
+				<button onclick="decrement('totalClicks12')" id="decrement12"  name=''>-</button>
 			</td>
 			<td>
-				<span id="totalClicks4">0</span>
+				<span id="totalClicks12"  name='totalClicks12'>0</span>
 			</td>
 			<td>
-				<button onclick="increment('totalClicks4')" id="increment4">+</button></td>
-				<td><input type="checkbox" name="checkbox" id="checkbox4">
+				<button onclick="increment('totalClicks12')" id="increment12"  name=''>+</button></td>
+				<td><input type="checkbox" name="checkbox" id="checkbox12"  name=''>
 				</td>
 		</tr>
 			</div>
 			</table>
 </div>
+
 </div>
+
 </div>
+
 </div>
-	</section>
+<div class="btn3">
+<a href="#sec5"><input type="submit" value="Order now" name="pay now" ></a>
+</div>	
+</form>
+
+<!-- <?php  
+
+include("connect.php");
+
+if(isset($_POST["pay now"])){
+
+	$totalClicks = $_POST["totalClicks"];
+	$totalClicks2 = $_POST["totalClicks2"];
+	$totalClicks3 = $_POST["totalClicks3"];
+	$totalClicks4 = $_POST["totalClicks4"];
+	$totalClicks5 = $_POST["totalClicks5"];
+	$totalClicks6 = $_POST["totalClicks6"];
+	$totalClicks7 = $_POST["totalClicks7"];
+	$totalClicks8 = $_POST["totalClicks8"];
+	$totalClicks9 = $_POST["totalClicks9"];
+	$totalClicks10 = $_POST["totalClicks10"];
+	$totalClicks11 = $_POST["totalClicks11"];
+	$totalClicks12 = $_POST["totalClicks12"];
+
+
+	 if($totalClicks1 >1){
+         $kira=$totalClicks * 1.50;
+		 $makanan="Donat chocolate ";
+
+
+    }
+    else if($totalClicks2 >1){
+ $kira2=$totalClicks2 * 1.50;
+ $makanan="Donat white chocolate ";
+    }
+    else if($totalClicks3 >1){
+       $kira3=$totalClicks3 * 0.50;
+	   $makanan="Donat red velvet";
+
+           }
+           else if($totalClicks4 >1){
+            $kira4=$totalClicks4 * 0.50;  
+			$makanan="Donut no topping";
+          
+           }
+           else if($totalClicks5 >1){
+            $kira5=$totalClicks5 * 0.50;   
+			$makanan="Strawberry cake";
+         
+           }
+           else if($totalClicks6 >1){
+            $kira6=$totalClicks6 * 45.50;  
+			$makanan="Chocolate cake";
+
+		
+		}
+            else if($totalClicks7 >1){
+                $kira7=$totalClicks7 * 45.50;  
+				$makanan="Cheese cake
+				";
+
+			}
+                else if($totalClicks8 >1){
+                    $kira8=$totalClicks8 * 50.50;  
+					$makanan="Biscoff cake";
+
+				}
+                    else if($totalClicks9 >1){
+                        $kira9=$totalClicks9 * 45.50;
+						$makanan="Chocolate cake";
+
+                    }
+                    else if($totalClicks10 >1){
+                        $kira10=$totalClicks10 * 3.00;
+						$makanan="Chocolate cake";
+
+                    }
+                    else if($totalClicks11 >1){
+                       $kira11=$totalClicks11 * 3.00;
+					   $makanan="Chocolate cake";
+
+                    }
+                    else if($totalClicks12 >1){
+                        $kira12=$totalClicks12 * 3.00;
+						$makanan="Chocolate cake";
+
+                    }
+        
+
+     $jum= $kira +$kira2 +$kira3 + $kira4 + $kira5 + $kira6 +$kira7 + $kira8 +$kira9 +$kira10 + $kira11 + $kira12;
+
+mysqli_query($conn,"INSERT INTO harga SET makanan='$makanan', 
+harga='$kira.$kira2.$kira3.$kira4.$kira5.$kira6.$kira7.$kira8.$kira9.$kira10.$kira11.$kira12', total='$jum'");
+
+
+
+}
+
+?> -->
+
+</section>
+
+
 	
 
 	<section class="sec4" id="pay">
-		<div class="item">
+		<div class="item" >
 
 <fieldset>	
-	
-<h3>Order List</h3>
-<div id="no1">
-<h5>Item</h5>
-<p>Donut White Chocolate - 1</p>
-<p>Donut No Topping - 2</p>
-<p>Cupcake Chocolate Cookies and Cream - 2</p>
-<p>Red Velvet Cream Cheese</p>
-</div>
-<div id="no2">
-<h5>Harga</h5>
-<p>RM 1.50</p>
-<p>RM 1.00</p>
-<p>RM 3.00</p>
-<p>RM 3.00</p>
-<p>Total : RM 8.50</p>
-</div>
+	<h3>Order List</h3>
+	<div class="tag"></div>
+	<table width="50%" align="center" cellpadding="10%" >
+<tr>
+		<th>ITEM</th><th> HARGA</th></tr>
+		<tr><td>
+		Donut White Chocolate</td><td>- 1 RM 1.50</td> </tr>
+		<tr><td>
+			Donut White Chocolate</td><td>- 1 RM 1.50</td> </tr>
+			<tr><td>
+				Donut White Chocolate</td><td>- 1 RM 1.50</td> </tr>
+				<tr><td>
+					Donut White Chocolate</td><td>- 1 RM 1.50</td> </tr>
+		</table>
+		<div style="float: right;">Total: </div>
 </fieldset>
 
 </div>
@@ -799,15 +992,16 @@ table{
 	<div class="delivery-container">
 	  <h4>Choose How to take:</h4>
 	  <fieldset>
-		<a href="payment.html"><button>Delivery</button></a>
-		<p>or</p>
-		<button>Pick Up</button>
+		<div class="box-btn1"><a href="payment.html"><button class="btn btn-delivery">Delivery</button></a></div>
+		<span> or </span>
+		<div class="box-btn2"><a href="payment.html"><button class="btn btn-pickup">Pick Up</button></a></div>
 	  </fieldset>
 	</div>
   </section>
   
-<script src="backery.js"></script>
+  
+
 
 </body>
-
+<script src="backery.js"></script>
 </html>
