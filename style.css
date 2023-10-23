@@ -66,12 +66,9 @@ section .gmbr ul {
       
     }
 
-section{
-    width: 100%;
-    height: 100vh;
-}
 
-section nav{
+
+nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -83,22 +80,22 @@ section nav{
     z-index: 1000;
 }
 
-section nav .logo img{
+nav .logo img{
     width: 100px;
     cursor: pointer;
     margin: 7px 0;
 }
 
-section nav ul{
+nav ul{
     list-style: none;
 }
 
-section nav ul li{
+ nav ul li{
     display: inline-block;
     margin: 0 15px;
 }
 
-section nav ul li a{
+ nav ul li a{
     text-decoration: none;
     color: #000;
     font-weight: 500;
@@ -106,7 +103,7 @@ section nav ul li a{
     transition: 0.1s;
 }
 
-section nav ul li a::after{
+ nav ul li a::after{
     content: '';
     width: 0;
     height: 2px;
@@ -115,15 +112,15 @@ section nav ul li a::after{
     transition: 0.2s linear;
 }
 
-section nav ul li a:hover::after{
+ nav ul li a:hover::after{
     width: 100%;
 }
 
-section nav ul li a:hover{
+ nav ul li a:hover{
     color: #fac031;
 }
 
-section nav .icon i{
+ nav .icon i{
     font-size: 18px;
     color: #000;
     margin: 0 5px;
@@ -131,11 +128,11 @@ section nav .icon i{
     transition: 0.3s;
 }
 
-section nav .icon i:hover{
+ nav .icon i:hover{
     color: #ef4c4c;
 }
 
-section .main{
+ .main{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -143,7 +140,7 @@ section .main{
     top: 100px;
 }
 
-section .main .men_text h1{
+ .main .men_text h1{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 2px 2px 2px rgb(251, 179, 179);
     color: #F4F3DA;
@@ -158,7 +155,7 @@ section .main .men_text h1{
 
 
 
-section .main .main_image img{
+ .main .main_image img{
     width: 300px;
     position: absolute;
     left: -25px;
@@ -167,7 +164,7 @@ section .main .main_image img{
    
 }
 
-section p{
+ p{
     width: 650px;
     text-align: center;
     position: relative;
@@ -180,7 +177,7 @@ section p{
     color: #F4F3DA;
 }
 
-section .main_btn{
+ .main_btn{
     background-color: #F4F3DA;
     position: absolute;
     left: 400px;
@@ -192,7 +189,7 @@ section .main_btn{
     border-radius: 25px;
 }
 
-section .main_btn a{
+ .main_btn a{
     color:#E6B3C4;
     margin-right: 5px;
     font-size: 20px;
@@ -202,12 +199,12 @@ section .main_btn a{
 
 }
 
-section .main_btn i{
+ .main_btn i{
     color:#E6B3C4;
     transition: 0.3s;
 }
 
-section .main_btn:hover i{
+ .main_btn:hover i{
     transform: translateX(7px);
 }
 
